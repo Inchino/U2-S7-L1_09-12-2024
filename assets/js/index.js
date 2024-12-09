@@ -35,8 +35,8 @@ class Pet{
     constructor(_petName, _ownerName, _species, _breed){
         this.petName = _firstName
         this.ownerName = _lastName
-        this.species = _age
-        this.breed = _location
+        this.species = _species
+        this.breed = _breed
     }
 };
 
