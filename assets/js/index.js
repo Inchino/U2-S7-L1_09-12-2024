@@ -30,11 +30,11 @@ console.log(checkAge());*/
 
 const btnAdd = document.getElementById('add');
 const pets = [];
-
+let newPet;
 class Pet{
     constructor(_petName, _ownerName, _species, _breed){
-        this.petName = _firstName;
-        this.ownerName = _lastName;
+        this.petName = _petName;
+        this.ownerName = _ownerName;
         this.species = _species;
         this.breed = _breed;
     }
@@ -47,6 +47,10 @@ btnAdd.addEventListener('click', (e) => {
     let species = document.getElementById('species').value;
     let breed = document.getElementById('breed').value;
 
+    newPet = new Pet(petName, ownerName, species, breed);
+    /* da rivedere */
+    newPet = pets.push();
+
     console.log(pets);
 
     printPets();
@@ -56,7 +60,7 @@ const printPets = () => {
     let listAnimals = document.getElementById('listAnimals');
     listAnimals.innerHTML = '';
 
-    pets.forEach(pet => {
+    newPet.forEach(pet => {
         let column1 = document.createElement('td');
         column1.innerText = `${pet.petName}`;
         let column2 = document.createElement('td');
