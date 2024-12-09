@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <header class="bg-dark text-white py-2 d-flex justify-content-center align-items-center">
+        <h1 class="text-center">Form Animali</h1>
+    </header>
+
+    <div class="container">
+        <form class="border border-2 border-secondary mt-2 p-3" id="addPet">
+            <div class="row">
+                <div class="col-3">
+                    <label for="category" class="form-label">Nome Animale</label>
+                    <br />
+                    <input type="text" class="form-control" id="petName" />
+                </div>
+                <div class="col-3">
+                    <label for="article" class="form-label">Nome Padrone</label>
+                    <br />
+                    <input type="text" class="form-control" id="ownerName" />
+                </div>
+                <div class="col-3">
+                    <label for="priceUni" class="form-label">Specie</label>
+                    <br />
+                    <input type="text" class="form-control" id="species" />
+                </div>
+                <div class="col-3">
+                    <label for="discount" class="form-label">Razza</label>
+                    <br />
+                    <input type="text" class="form-control" id="breed" />
+                </div>
+            </div>
+            <button type="button" id="add" class="btn btn-success mt-3">AGGIUNGI</button>
+        </form>
+    </div>
+
+    <hr />
+
+    <div class="container">
+        <table class="table table-striped table-hover">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <th>NOME ANIMALE</th>
+                    <th>NOME PADRONE</th>
+                    <th>SPECIE</th>
+                    <th>RAZZA</th>
+                </tr>
+            </thead>
+            <tbody id="listAnimals">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
