@@ -1,4 +1,4 @@
-/*------User------
+/*------ FORM USER------*/
 class User{
     constructor(_firstName, _lastName, _age, _location){
         this.name = _firstName
@@ -15,16 +15,19 @@ console.log(User_2);
 const User_3 = new User('Alessia', 'Di Gennaro', 30, 'Piemonte');
 console.log(User_3);
 
-function checkAge(User_1, User_2){
-    if(this.age.User_1 > this.age.User_2){
-        return  `${this.name.User_1} ${this.surname.User_1} è più vecchio di ${this.name.User_2} ${this.surname.User_2}`;
-    }else if(this.age.User_1 === this.age.User_2){
-        return  `${this.name.User_1} ${this.surname.User_1} e ${this.name.User_2} ${this.surname.User_2} sono coetanei.`;
+function checkAge(anotherUser){
+    if(this.age > anotherUser.age){
+        return  `${this.name} ${this.surname} è più vecchio di ${anotherUser.name} ${anotherUser.surname}`;
+    }else if(this.age === anotherUser.age){
+        return  `${this.name} ${this.surname} e ${anotherUser.name} ${anotherUser.surname} sono coetanei.`;
     }else{
-        return `${this.name.User_2} ${this.surname.User_2} è più vecchio di ${this.name.User_1} ${this.surname.User_1}`;
+        return `${anotherUser.name} ${anotherUser.surname} è più vecchio di ${this.name} ${this.surname}`;
     }
-}
-console.log(checkAge());*/
+};
+
+console.log(User_1.checkAge(User_2));
+console.log(User_1.checkAge(User_3));
+console.log(User_2.checkAge(User_3));
 
 /*------FORM ANIMALI------*/
 
